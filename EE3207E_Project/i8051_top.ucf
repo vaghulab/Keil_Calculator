@@ -1,0 +1,30 @@
+NET "clk" LOC = "C10"; #Clock is 16 MHz
+NET "rst" LOC = "H4";  #Mapping rst to EF4 FPGA_RESET
+
+NET "p0_out<0>" LOC = "D14"; #Mapping Pin 0 of Port 0 to LED1(D5)
+NET "p0_out<1>" LOC = "C16"; #Mapping Pin 1 of Port 0 to LED2(D4)
+NET "p0_out<2>" LOC = "C15"; #Mapping Pin 2 of Port 0 to LED3(D3)
+NET "p0_out<3>" LOC = "B15"; #Mapping Pin 3 of Port 0 to LED4(D2)
+
+NET "p0_in<4>" LOC = "L3"; #Mapping Pin 0 of Port 0 to EF3 FPGA_PUSH_C
+NET "p0_in<5>" LOC = "H5"; #Mapping Pin 1 of Port 0 to EF2 FPGA_PUSH_B
+NET "p0_in<6>" LOC = "K3"; #Mapping Pin 2 of Port 0 to EF1 FPGA_PUSH_A
+
+NET "p1_out<0>" LOC = "D13"; #Mapping Pin 0 of Port 1 to BANK0_IO6
+NET "p1_out<1>" LOC = "C12"; #Mapping Pin 1 of Port 1 to BANK0_IO8
+NET "p1_out<2>" LOC = "D11"; #Mapping Pin 2 of Port 1 to BANK0_IO10
+NET "p1_out<3>" LOC = "C11"; #Mapping Pin 3 of Port 1 to BANK0_IO12
+NET "p1_out<4>" LOC = "D10"; #Mapping Pin 4 of Port 1 to BANK0_IO14
+NET "p1_out<5>" LOC = "E10"; #Mapping Pin 5 of Port 1 to BANK0_IO16
+NET "p1_out<6>" LOC = "D9";  #Mapping Pin 6 of Port 1 to BANK0_IO18
+NET "p1_out<7>" LOC = "C8";  #Mapping Pin 7 of Port 1 to BANK0_IO20
+
+NET "p2_in<0>" LOC = "C9"; #Mapping Pin 0 of Port 2 to BANK0_IO17
+NET "p2_in<1>" LOC = "A8"; #Mapping Pin 1 of Port 2 to BANK0_IO19
+NET "p2_in<2>" LOC = "B8"; #Mapping Pin 2 of Port 2 to BANK0_IO21
+NET "p2_in<3>" LOC = "A7"; #Mapping Pin 3 of Port 2 to BANK0_IO23
+
+NET "p3_in<0>" LOC = "C7"; #Mapping Pin 0 of Port 3 to BANK0_IO25
+NET "p3_in<1>" LOC = "A6"; #Mapping Pin 1 of Port 3 to BANK0_IO27
+NET "p3_in<2>" LOC = "B6"; #Mapping Pin 2 of Port 3 to BANK0_IO29
+NET "p3_in<3>" LOC = "A5"; #Mapping Pin 3 of Port 3 to BANK0_IO31

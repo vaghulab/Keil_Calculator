@@ -1,0 +1,1 @@
+When generating the bit file for flashing onto the FPGA Board, please use the 8051_top_fpga.vhd file present in the folder : "8051_top_fpga (For Generating Bit File)". When running the simulations for testing on Xilinx, please use the 8051_top_fpga.vhd file present in the folder : "8051_top_fpga (For Xilinx Simulation)".

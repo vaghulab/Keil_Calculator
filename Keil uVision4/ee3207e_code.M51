@@ -1,0 +1,145 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/14/2012  03:24:15  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE ee3207e_code.obj TO ee3207e_code CODE (0X0000-0X0FFF)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  ee3207e_code.obj (EE3207E_CODE)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  ee3207e_code (EE3207E_CODE)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00CCH     INBLOCK      ?PR?MAIN?EE3207E_CODE
+            CODE    08CCH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   ee3207e_code (EE3207E_CODE)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?EE3207E_CODE
+
+?PR?MAIN?EE3207E_CODE          0008H    0002H
+
+
+
+SYMBOL TABLE OF MODULE:  ee3207e_code (EE3207E_CODE)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        EE3207E_CODE
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:0080H.1       PUBLIC        subtract_led
+  B:0080H.4       PUBLIC        user_input1
+  B:0080H.5       PUBLIC        user_input2
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/14/2012  03:24:15  PAGE 2
+
+
+  B:0080H.6       PUBLIC        user_input3
+  B:0080H.3       PUBLIC        divide_led
+  B:0080H.2       PUBLIC        multiply_led
+  C:0800H         PUBLIC        main
+  B:0080H.0       PUBLIC        add_led
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        operand1
+  D:0007H         SYMBOL        operand2
+  D:0008H         SYMBOL        input_delay1
+  D:0002H         SYMBOL        input_delay2
+  -------         ENDDO         
+  C:0800H         LINE#         18
+  C:0800H         LINE#         19
+  C:0800H         LINE#         21
+  C:0801H         LINE#         22
+  C:0801H         LINE#         23
+  C:0805H         LINE#         24
+  C:0807H         LINE#         27
+  C:0809H         LINE#         28
+  C:080CH         LINE#         29
+  C:080FH         LINE#         32
+  C:0811H         LINE#         33
+  C:0813H         LINE#         34
+  C:0815H         LINE#         35
+  C:0817H         LINE#         37
+  C:0817H         LINE#         38
+  C:0817H         LINE#         40
+  C:0819H         LINE#         41
+  C:081CH         LINE#         43
+  C:081EH         LINE#         44
+  C:0821H         LINE#         46
+  C:0829H         LINE#         47
+  C:0831H         LINE#         48
+  C:0839H         LINE#         51
+  C:0842H         LINE#         52
+  C:0842H         LINE#         53
+  C:0844H         LINE#         54
+  C:0846H         LINE#         55
+  C:0848H         LINE#         56
+  C:084AH         LINE#         58
+  C:084EH         LINE#         59
+  C:0850H         LINE#         61
+  C:0859H         LINE#         62
+  C:0859H         LINE#         63
+  C:085BH         LINE#         64
+  C:085DH         LINE#         65
+  C:085FH         LINE#         66
+  C:0861H         LINE#         69
+  C:0866H         LINE#         70
+  C:086BH         LINE#         72
+  C:0870H         LINE#         73
+  C:0872H         LINE#         75
+  C:087BH         LINE#         76
+  C:087BH         LINE#         77
+  C:087DH         LINE#         78
+  C:087FH         LINE#         79
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/14/2012  03:24:15  PAGE 3
+
+
+  C:0881H         LINE#         80
+  C:0883H         LINE#         82
+  C:0889H         LINE#         83
+  C:088BH         LINE#         85
+  C:0894H         LINE#         86
+  C:0894H         LINE#         87
+  C:0896H         LINE#         88
+  C:0898H         LINE#         89
+  C:089AH         LINE#         90
+  C:089CH         LINE#         92
+  C:08A2H         LINE#         95
+  C:08B4H         LINE#         96
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        EE3207E_CODE
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00CCH BYTE ( 9%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=219
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

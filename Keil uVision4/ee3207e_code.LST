@@ -1,0 +1,314 @@
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE EE3207E_CODE
+OBJECT MODULE PLACED IN ee3207e_code.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE ee3207e_code.c ROM(SMALL) BROWSE DEBUG OBJECTEXTEND CODE
+
+line level    source
+
+   1          //EE3207 Group 2
+   2          //Names : Vaghul Aditya Balaji, Ravi Theja Reddy Singannagari & Jin Qian
+   3          //Title : 4-Bit Binary Calculator
+   4          
+   5          #include <REG51.H>
+   6          
+   7          //Associating the variables to the LED outputs on the FPGA Board
+   8          sbit add_led = P0^0;
+   9          sbit subtract_led = P0^1;
+  10          sbit multiply_led = P0^2;
+  11          sbit divide_led = P0^3;
+  12          
+  13          //Associating the variables to the capacitive touchpad inputs on the FPGA Board
+  14          sbit user_input1 = P0^4;
+  15          sbit user_input2 = P0^5;
+  16          sbit user_input3 = P0^6;
+  17          
+  18          void main()
+  19          {
+  20   1              //Declaration of variables to be used in the Program
+  21   1              unsigned char operand1 = 0x00;
+  22   1              unsigned char operand2 = 0x00;
+  23   1              unsigned int input_delay1 = 0;
+  24   1              unsigned int input_delay2 = 0;
+  25   1              
+  26   1              //Assigning initial values for the GPIO Ports
+  27   1              P1 = 0x00;
+  28   1              P2 = 0xFF;
+  29   1              P3 = 0xFF;
+  30   1      
+  31   1              //Turning off all the LEDs on the FPGA Board
+  32   1              add_led = 0;
+  33   1              subtract_led = 0;
+  34   1              multiply_led = 0;
+  35   1              divide_led = 0;
+  36   1      
+  37   1              while(1)
+  38   1              {
+  39   2                      //Obtaining inputs from the GPIO pins and the capacitive touchpads
+  40   2                      operand1 = P2;
+  41   2                      operand1 &= 0x0F;
+  42   2      
+  43   2                      operand2 = P3;
+  44   2                      operand2 &= 0x0F;
+  45   2      
+  46   2                      user_input1 = P0^4;
+  47   2                      user_input2 = P0^5;
+  48   2                      user_input3 = P0^6;
+  49   2      
+  50   2                      //Checking whether the user wants to perform an add/subtract/multiply/divide operation
+  51   2                      if(user_input1 && !user_input2 && !user_input3)
+  52   2                      {
+  53   3                              add_led = 1;
+  54   3                              subtract_led = 0;
+  55   3                              multiply_led = 0;
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 2   
+
+  56   3                              divide_led = 0;
+  57   3      
+  58   3                              P1 = operand1 + operand2;
+  59   3                      }
+  60   2                      else
+  61   2                              if(!user_input1 && user_input2 && !user_input3)
+  62   2                              {
+  63   3                                      add_led = 0;
+  64   3                                      subtract_led = 1;
+  65   3                                      multiply_led = 0;
+  66   3                                      divide_led = 0;
+  67   3      
+  68   3                                      //Code executed when a larger number is subtracted from a smaller number
+  69   3                                      if(operand2 > operand1)
+  70   3                                              P1 = 0xFF;
+  71   3                                      else
+  72   3                                              P1 = operand1 - operand2;
+  73   3                              }
+  74   2                              else
+  75   2                                      if(!user_input1 && !user_input2 && user_input3)
+  76   2                                      {
+  77   3                                              add_led = 0;
+  78   3                                              subtract_led = 0;
+  79   3                                              multiply_led = 1;
+  80   3                                              divide_led = 0;
+  81   3      
+  82   3                                              P1 = operand1 * operand2;
+  83   3                                      }
+  84   2                                      else
+  85   2                                              if(user_input1 && user_input2 && !user_input3)
+  86   2                                              {
+  87   3                                                      add_led = 0;
+  88   3                                                      subtract_led = 0;
+  89   3                                                      multiply_led = 0;
+  90   3                                                      divide_led = 1;
+  91   3      
+  92   3                                                      P1 = operand1 / operand2;
+  93   3      
+  94   3                                                      //Software delay to stabilize the input from the user (only valid for the divide operation)
+  95   3                                                      for(input_delay1 = 0; input_delay1 < 200; input_delay1++)
+  96   3                                                                for(input_delay2 = 0; input_delay2 < 200; input_delay2++);
+  97   3                                              }
+  98   2              }
+  99   1      }
+ 100          //End of Program
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 3   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 18
+;---- Variable 'operand2' assigned to Register 'R7' ----
+;---- Variable 'operand1' assigned to Register 'R6' ----
+                                           ; SOURCE LINE # 19
+                                           ; SOURCE LINE # 21
+0000 E4                CLR     A
+                                           ; SOURCE LINE # 22
+                                           ; SOURCE LINE # 23
+0001 F500        R     MOV     input_delay1,A
+0003 F500        R     MOV     input_delay1+01H,A
+                                           ; SOURCE LINE # 24
+;---- Variable 'input_delay2' assigned to Register 'R2/R3' ----
+0005 FB                MOV     R3,A
+0006 FA                MOV     R2,A
+                                           ; SOURCE LINE # 27
+0007 F590              MOV     P1,A
+                                           ; SOURCE LINE # 28
+0009 75A0FF            MOV     P2,#0FFH
+                                           ; SOURCE LINE # 29
+000C 75B0FF            MOV     P3,#0FFH
+                                           ; SOURCE LINE # 32
+000F C280              CLR     add_led
+                                           ; SOURCE LINE # 33
+0011 C281              CLR     subtract_led
+                                           ; SOURCE LINE # 34
+0013 C282              CLR     multiply_led
+                                           ; SOURCE LINE # 35
+0015 C283              CLR     divide_led
+0017         ?C0001:
+                                           ; SOURCE LINE # 37
+                                           ; SOURCE LINE # 38
+                                           ; SOURCE LINE # 40
+0017 AEA0              MOV     R6,P2
+                                           ; SOURCE LINE # 41
+0019 53060F            ANL     AR6,#0FH
+                                           ; SOURCE LINE # 43
+001C AFB0              MOV     R7,P3
+                                           ; SOURCE LINE # 44
+001E 53070F            ANL     AR7,#0FH
+                                           ; SOURCE LINE # 46
+0021 E580              MOV     A,P0
+0023 6404              XRL     A,#04H
+0025 24FF              ADD     A,#0FFH
+0027 9284              MOV     user_input1,C
+                                           ; SOURCE LINE # 47
+0029 E580              MOV     A,P0
+002B 6405              XRL     A,#05H
+002D 24FF              ADD     A,#0FFH
+002F 9285              MOV     user_input2,C
+                                           ; SOURCE LINE # 48
+0031 E580              MOV     A,P0
+0033 6406              XRL     A,#06H
+0035 24FF              ADD     A,#0FFH
+0037 9286              MOV     user_input3,C
+                                           ; SOURCE LINE # 51
+0039 308414            JNB     user_input1,?C0003
+003C 208511            JB      user_input2,?C0003
+003F 20860E            JB      user_input3,?C0003
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 4   
+
+                                           ; SOURCE LINE # 52
+                                           ; SOURCE LINE # 53
+0042 D280              SETB    add_led
+                                           ; SOURCE LINE # 54
+0044 C281              CLR     subtract_led
+                                           ; SOURCE LINE # 55
+0046 C282              CLR     multiply_led
+                                           ; SOURCE LINE # 56
+0048 C283              CLR     divide_led
+                                           ; SOURCE LINE # 58
+004A EE                MOV     A,R6
+004B 2F                ADD     A,R7
+004C F590              MOV     P1,A
+                                           ; SOURCE LINE # 59
+004E 80C7              SJMP    ?C0001
+0050         ?C0003:
+                                           ; SOURCE LINE # 61
+0050 20841F            JB      user_input1,?C0005
+0053 30851C            JNB     user_input2,?C0005
+0056 208619            JB      user_input3,?C0005
+                                           ; SOURCE LINE # 62
+                                           ; SOURCE LINE # 63
+0059 C280              CLR     add_led
+                                           ; SOURCE LINE # 64
+005B D281              SETB    subtract_led
+                                           ; SOURCE LINE # 65
+005D C282              CLR     multiply_led
+                                           ; SOURCE LINE # 66
+005F C283              CLR     divide_led
+                                           ; SOURCE LINE # 69
+0061 EF                MOV     A,R7
+0062 D3                SETB    C
+0063 9E                SUBB    A,R6
+0064 4005              JC      ?C0006
+                                           ; SOURCE LINE # 70
+0066 7590FF            MOV     P1,#0FFH
+0069 80AC              SJMP    ?C0001
+006B         ?C0006:
+                                           ; SOURCE LINE # 72
+006B C3                CLR     C
+006C EE                MOV     A,R6
+006D 9F                SUBB    A,R7
+006E F590              MOV     P1,A
+                                           ; SOURCE LINE # 73
+0070 80A5              SJMP    ?C0001
+0072         ?C0005:
+                                           ; SOURCE LINE # 75
+0072 208416            JB      user_input1,?C0009
+0075 208513            JB      user_input2,?C0009
+0078 308610            JNB     user_input3,?C0009
+                                           ; SOURCE LINE # 76
+                                           ; SOURCE LINE # 77
+007B C280              CLR     add_led
+                                           ; SOURCE LINE # 78
+007D C281              CLR     subtract_led
+                                           ; SOURCE LINE # 79
+007F D282              SETB    multiply_led
+                                           ; SOURCE LINE # 80
+0081 C283              CLR     divide_led
+                                           ; SOURCE LINE # 82
+0083 EE                MOV     A,R6
+0084 8FF0              MOV     B,R7
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 5   
+
+0086 A4                MUL     AB
+0087 F590              MOV     P1,A
+                                           ; SOURCE LINE # 83
+0089 808C              SJMP    ?C0001
+008B         ?C0009:
+                                           ; SOURCE LINE # 85
+008B 308489            JNB     user_input1,?C0001
+008E 308586            JNB     user_input2,?C0001
+0091 208683            JB      user_input3,?C0001
+                                           ; SOURCE LINE # 86
+                                           ; SOURCE LINE # 87
+0094 C280              CLR     add_led
+                                           ; SOURCE LINE # 88
+0096 C281              CLR     subtract_led
+                                           ; SOURCE LINE # 89
+0098 C282              CLR     multiply_led
+                                           ; SOURCE LINE # 90
+009A D283              SETB    divide_led
+                                           ; SOURCE LINE # 92
+009C EE                MOV     A,R6
+009D 8FF0              MOV     B,R7
+009F 84                DIV     AB
+00A0 F590              MOV     P1,A
+                                           ; SOURCE LINE # 95
+00A2 E4                CLR     A
+00A3 F500        R     MOV     input_delay1,A
+00A5 F500        R     MOV     input_delay1+01H,A
+00A7         ?C0012:
+00A7 C3                CLR     C
+00A8 E500        R     MOV     A,input_delay1+01H
+00AA 94C8              SUBB    A,#0C8H
+00AC E500        R     MOV     A,input_delay1
+00AE 9400              SUBB    A,#00H
+00B0 4002              JC      $ + 4H
+00B2 0100        R     AJMP    ?C0001
+                                           ; SOURCE LINE # 96
+00B4 E4                CLR     A
+00B5 FA                MOV     R2,A
+00B6 FB                MOV     R3,A
+00B7         ?C0015:
+00B7 0B                INC     R3
+00B8 BB0001            CJNE    R3,#00H,?C0019
+00BB 0A                INC     R2
+00BC         ?C0019:
+00BC EB                MOV     A,R3
+00BD 64C8              XRL     A,#0C8H
+00BF 4A                ORL     A,R2
+00C0 70F5              JNZ     ?C0015
+00C2         ?C0014:
+00C2 0500        R     INC     input_delay1+01H
+00C4 E500        R     MOV     A,input_delay1+01H
+00C6 70DF              JNZ     ?C0012
+00C8 0500        R     INC     input_delay1
+00CA         ?C0020:
+00CA 80DB              SJMP    ?C0012
+             ; FUNCTION main (END)
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    204    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.05   EE3207E_CODE                                                          11/14/2012 03:24:14 PAGE 6   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

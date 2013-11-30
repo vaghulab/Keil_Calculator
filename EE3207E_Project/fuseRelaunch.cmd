@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/test_ee3207e_project_isim_beh.exe" -prj "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/test_ee3207e_project_beh.prj" "work.test_ee3207e_project" 

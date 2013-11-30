@@ -1,0 +1,5 @@
+set -tmpdir "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/xst/projnav.tmp"
+set -xsthdpdir "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/xst"
+elaborate
+-ifn sequencer2.prj
+-ifmt mixed

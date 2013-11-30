@@ -1,0 +1,3 @@
+vhdl isim_temp "ext_interrupt.vhd"
+vhdl isim_temp "constants.vhd"
+vhdl isim_temp "regfile.vhd"

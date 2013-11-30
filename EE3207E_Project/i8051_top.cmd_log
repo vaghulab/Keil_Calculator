@@ -1,0 +1,190 @@
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+xst -intstyle ise -ifn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.xst" -ofn "D:/NUS Course Files/Semester V/EE3207E/Miscellaneous/EE3207E_Project/i8051_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc i8051_top.ucf -p xc3s400a-ft256-4 "i8051_top.ngc" i8051_top.ngd  
+map -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o i8051_top_map.ncd i8051_top.ngd i8051_top.pcf 
+par -w -intstyle ise -ol high -t 1 i8051_top_map.ncd i8051_top.ncd i8051_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml i8051_top.twx i8051_top.ncd -o i8051_top.twr i8051_top.pcf -ucf i8051_top.ucf 
+bitgen -intstyle ise -f i8051_top.ut i8051_top.ncd 
